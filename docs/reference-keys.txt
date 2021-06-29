@@ -2,9 +2,9 @@ fig:nice-fig
 tab:nice-tab
 prerequisites
 intro
-literature
+matemática-básica-no-r
 methods
-applications
+a-gramática-dos-gráficos
 example-one
 example-two
 final-words
