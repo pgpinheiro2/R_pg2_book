@@ -1,4 +1,4 @@
-output_dir: "livro"
+output_dir: "docs"
 book_filename: "R_pg2_book"
 delete_merged_file: true
 language: 
