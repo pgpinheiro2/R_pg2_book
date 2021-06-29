@@ -2,7 +2,7 @@
 
 Aqui mostramos como executar algumas operações aritméticas básicas  e algumas funções no `R`. Trazemos os códigos e ao final um vídeo explicativo com todas as operações listadas.
 
-
+## Aritmética
 ```{r results=F}
 # Soma:
 1+3
