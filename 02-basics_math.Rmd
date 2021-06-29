@@ -1,6 +1,8 @@
 # Matemática básica no `R`
 
-```{r}
+Aqui mostramos como executar algumas operações aritméticas básicas  e algumas funções no `R`. Trazemos os códigos e ao final um vídeo explicativo com todas as operações listadas.
+
+```{r results=F}
 # Soma:
 1+3
 10+2
@@ -82,4 +84,10 @@ x |> cumsum() |> max()
 # Produtórios:
 x |> prod()
 prod(x)
+```
+
+*Link* da aula [Matemática Básica no R:](https://youtu.be/QDLqS3y5u7Q)
+
+```{r}
+knitr::include_url("https://youtu.be/QDLqS3y5u7Q")
 ```
