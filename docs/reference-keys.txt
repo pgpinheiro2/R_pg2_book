@@ -3,6 +3,7 @@ tab:nice-tab
 apresentação
 intro
 matemática-básica-no-r
+aritmética
 operador-pipe
 visualização-de-dados
 a-gramática-dos-gráficos

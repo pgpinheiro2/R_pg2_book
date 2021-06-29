@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.28)  29 JUN 2021 17:52
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2021.6.28)  29 JUN 2021 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,40 +945,36 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <24.88> not available
 [9
 
 ]
-Underfull \vbox (badness 10000) detected at line 314
+Overfull \vbox (0.82999pt too high) detected at line 317
  []
 
-
-Underfull \vbox (badness 10000) detected at line 314
- []
-
-LaTeX Info: Redefining \rmfamily on input line 314.
-LaTeX Info: Redefining \sffamily on input line 314.
-LaTeX Info: Redefining \ttfamily on input line 314.
+LaTeX Info: Redefining \rmfamily on input line 317.
+LaTeX Info: Redefining \sffamily on input line 317.
+LaTeX Info: Redefining \ttfamily on input line 317.
 [10]
-LaTeX Info: Redefining \rmfamily on input line 334.
-LaTeX Info: Redefining \sffamily on input line 334.
-LaTeX Info: Redefining \ttfamily on input line 334.
+LaTeX Info: Redefining \rmfamily on input line 337.
+LaTeX Info: Redefining \sffamily on input line 337.
+LaTeX Info: Redefining \ttfamily on input line 337.
 [11]
-LaTeX Info: Redefining \rmfamily on input line 334.
-LaTeX Info: Redefining \sffamily on input line 334.
-LaTeX Info: Redefining \ttfamily on input line 334.
+LaTeX Info: Redefining \rmfamily on input line 337.
+LaTeX Info: Redefining \sffamily on input line 337.
+LaTeX Info: Redefining \ttfamily on input line 337.
 [12
 
 ]
 Capítulo 4.
 [13]
-LaTeX Info: Redefining \rmfamily on input line 339.
-LaTeX Info: Redefining \sffamily on input line 339.
-LaTeX Info: Redefining \ttfamily on input line 339.
+LaTeX Info: Redefining \rmfamily on input line 342.
+LaTeX Info: Redefining \sffamily on input line 342.
+LaTeX Info: Redefining \ttfamily on input line 342.
 [14
 
 ]
 Capítulo 5.
 [15]
-LaTeX Info: Redefining \rmfamily on input line 350.
-LaTeX Info: Redefining \sffamily on input line 350.
-LaTeX Info: Redefining \ttfamily on input line 350.
+LaTeX Info: Redefining \rmfamily on input line 353.
+LaTeX Info: Redefining \sffamily on input line 353.
+LaTeX Info: Redefining \ttfamily on input line 353.
 [16
 
 ]
@@ -1024,9 +1020,9 @@ braces):
 >  {portuguese/babelname}  =>  {brazil}
 >  {portuguese/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {portuguese/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
 [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
 (./R_pg2_book.aux
 Package polyglossia Info: Option: portuguese, variant=brazilian.
 Package polyglossia Info: Option: portuguese, variant=brazilian.
@@ -1034,17 +1030,17 @@ LaTeX Info: Redefining \rmfamily on input line 20.
 LaTeX Info: Redefining \sffamily on input line 20.
 LaTeX Info: Redefining \ttfamily on input line 20.
 )
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 359.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 359.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 362.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 362.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19934 strings out of 479819
- 354524 string characters out of 5895846
- 802954 words of memory out of 5000000
- 36734 multiletter control sequences out of 15000+600000
+ 19936 strings out of 479819
+ 354545 string characters out of 5895846
+ 802991 words of memory out of 5000000
+ 36736 multiletter control sequences out of 15000+600000
  538829 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,8n,115p,809b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
