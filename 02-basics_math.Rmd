@@ -88,6 +88,6 @@ prod(x)
 
 *Link* da aula [Matemática Básica no R:](https://youtu.be/QDLqS3y5u7Q)
 
-```{r}
+```{r, echo=F, results='asis'}
 knitr::include_url("https://youtu.be/embed/QDLqS3y5u7Q")
 ```
