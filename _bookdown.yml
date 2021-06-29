@@ -1,0 +1,6 @@
+output_dir: "livro"
+book_filename: "R_pg2_book"
+delete_merged_file: true
+language: 
+  ui:
+    chapter_name: "Capítulo "
