@@ -8,6 +8,7 @@ bookdown::gitbook:
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: ["pdf", "epub", "mobi "]
     sharing:
+      github: yes
       all: ['facebook', 'github', 'twitter', 'linkedin', 'whatsapp']
     info: yes
 bookdown::pdf_book:

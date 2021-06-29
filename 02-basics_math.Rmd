@@ -2,6 +2,7 @@
 
 Aqui mostramos como executar algumas operações aritméticas básicas  e algumas funções no `R`. Trazemos os códigos e ao final um vídeo explicativo com todas as operações listadas.
 
+
 ```{r results=F}
 # Soma:
 1+3
@@ -86,8 +87,21 @@ x |> prod()
 prod(x)
 ```
 
-*Link* da aula [Matemática Básica no R:](https://youtu.be/QDLqS3y5u7Q)
 
-```{r, echo=F, results='asis'}
-knitr::include_url("https://youtu.be/embed/QDLqS3y5u7Q")
+```{r, eval=knitr::is_html_output(excludes = "epub"), echo=F, results='asis'}
+cat('<iframe width="560" height="315" src="https://www.youtube.com/embed/QDLqS3y5u7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 ```
+
+- *Link* da aula: [Matemática Básica no R](https://youtu.be/QDLqS3y5u7Q).
+
+
+
+## Operador *Pipe*
+
+Aqui temos um exemplo básico da utilização do operador *pipe* `|>`disponível no `R` a partir deste ano de 2021.`
+
+```{r, eval=knitr::is_html_output(excludes = "epub"), echo=F, results='asis'}
+cat('<iframe width="560" height="315" src="https://www.youtube.com/embed/n27-lBxdfFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+```
+
+- *Link* da aula: [Operador Pipe](https://youtu.be/n27-lBxdfFg).

@@ -3,8 +3,9 @@ tab:nice-tab
 apresentação
 intro
 matemática-básica-no-r
-methods
+operador-pipe
+visualização-de-dados
 a-gramática-dos-gráficos
 example-one
 example-two
-final-words
+considerações-finais

@@ -5,20 +5,20 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 3 Matemática básica no R | R na Cozinha</title>
-  <meta name="description" content="Este é a minha contribuição ao ensino do R." />
+  <meta name="description" content="Este é a minha contribuição ao ensino do R. Foi elaborado graças ao pacote bookdown." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 3 Matemática básica no R | R na Cozinha" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://pgpinheiro2.github.io/R_pg2_book/" />
   
-  <meta property="og:description" content="Este é a minha contribuição ao ensino do R." />
+  <meta property="og:description" content="Este é a minha contribuição ao ensino do R. Foi elaborado graças ao pacote bookdown." />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Capítulo 3 Matemática básica no R | R na Cozinha" />
   
-  <meta name="twitter:description" content="Este é a minha contribuição ao ensino do R." />
+  <meta name="twitter:description" content="Este é a minha contribuição ao ensino do R. Foi elaborado graças ao pacote bookdown." />
   
 
 <meta name="author" content="Paulo Guilherme Pinheiro dos Santos" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="intro.html"/>
-<link rel="next" href="methods.html"/>
+<link rel="next" href="visualização-de-dados.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -160,14 +160,17 @@ div.csl-indent {
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Apresentação</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introdução</a></li>
-<li class="chapter" data-level="3" data-path="matemática-básica-no-r.html"><a href="matemática-básica-no-r.html"><i class="fa fa-check"></i><b>3</b> Matemática básica no <code>R</code></a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="3" data-path="matemática-básica-no-r.html"><a href="matemática-básica-no-r.html"><i class="fa fa-check"></i><b>3</b> Matemática básica no <code>R</code></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="matemática-básica-no-r.html"><a href="matemática-básica-no-r.html#operador-pipe"><i class="fa fa-check"></i><b>3.1</b> Operador <em>Pipe</em></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="visualização-de-dados.html"><a href="visualização-de-dados.html"><i class="fa fa-check"></i><b>4</b> Visualização de dados</a></li>
 <li class="chapter" data-level="5" data-path="a-gramática-dos-gráficos.html"><a href="a-gramática-dos-gráficos.html"><i class="fa fa-check"></i><b>5</b> A gramática dos gráficos</a>
 <ul>
 <li class="chapter" data-level="5.1" data-path="a-gramática-dos-gráficos.html"><a href="a-gramática-dos-gráficos.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
 <li class="chapter" data-level="5.2" data-path="a-gramática-dos-gráficos.html"><a href="a-gramática-dos-gráficos.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="6" data-path="considerações-finais.html"><a href="considerações-finais.html"><i class="fa fa-check"></i><b>6</b> Considerações Finais</a></li>
 <li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -273,10 +276,21 @@ div.csl-indent {
 <span id="cb3-79"><a href="matemática-básica-no-r.html#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Produtórios:</span></span>
 <span id="cb3-80"><a href="matemática-básica-no-r.html#cb3-80" aria-hidden="true" tabindex="-1"></a>x <span class="sc">|</span><span class="er">&gt;</span> <span class="fu">prod</span>()</span>
 <span id="cb3-81"><a href="matemática-básica-no-r.html#cb3-81" aria-hidden="true" tabindex="-1"></a><span class="fu">prod</span>(x)</span></code></pre></div>
-<p><em>Link</em> da aula <a href="https://youtu.be/QDLqS3y5u7Q">Matemática Básica no R:</a></p>
-<iframe src="https://youtu.be/embed/QDLqS3y5u7Q" width="672" height="400px">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QDLqS3y5u7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+<ul>
+<li><em>Link</em> da aula: <a href="https://youtu.be/QDLqS3y5u7Q">Matemática Básica no R</a>.</li>
+</ul>
+<div id="operador-pipe" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Operador <em>Pipe</em></h2>
+<p>Aqui temos um exemplo básico da utilização do operador <em>pipe</em> <code>|&gt;</code>disponível no <code>R</code> a partir deste ano de 2021.`</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n27-lBxdfFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<ul>
+<li><em>Link</em> da aula: <a href="https://youtu.be/n27-lBxdfFg">Operador Pipe</a>.</li>
+</ul>
 
+</div>
 </div>
             </section>
 
@@ -284,7 +298,7 @@ div.csl-indent {
         </div>
       </div>
 <a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="visualização-de-dados.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -300,7 +314,7 @@ div.csl-indent {
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": true,
 "twitter": true,
 "linkedin": false,
