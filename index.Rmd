@@ -1,5 +1,5 @@
 --- 
-title: "Projeto: R na Cozinha"
+title: "R na Cozinha"
 author: "Paulo Guilherme Pinheiro dos Santos"
 date: "`r format(Sys.Date(), '%d de %B de %Y')`"
 site: bookdown::bookdown_site
