@@ -1,0 +1,4 @@
+# Apresentações com `R`
+
+Com `R` podemos criar apresentações de diversas maneiras. Inclusive com o `RStudio` aumentamos mais ainda esse leque de possibilidades. Aqui mostraremos como fazê-las utilizando os pacotes `rmarkdown` e `xaringan`.
+

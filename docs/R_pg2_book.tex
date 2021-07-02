@@ -1,8 +1,10 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
+  12pt,
   brazilian,
 ]{book}
 \usepackage{amsmath,amssymb}
@@ -40,9 +42,14 @@
   pdftitle={R na Cozinha},
   pdfauthor={Paulo Guilherme Pinheiro dos Santos},
   pdflang={pt-br},
-  hidelinks,
+  colorlinks=true,
+  linkcolor=red,
+  filecolor=Maroon,
+  citecolor=blue,
+  urlcolor=magenta,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\usepackage[top=3cm,left=3cm,right=2cm,bottom=2cm]{geometry}
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -111,8 +118,6 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
-
-
 \ifxetex
   % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
   \usepackage{polyglossia}
@@ -131,32 +136,25 @@
 
 \title{R na Cozinha}
 \author{Paulo Guilherme Pinheiro dos Santos}
-\date{29 de junho de 2021}
+\date{30 de junho de 2021}
 
 \begin{document}
 \maketitle
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
 \hypertarget{apresentauxe7uxe3o}{%
 \chapter{Apresentação}\label{apresentauxe7uxe3o}}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
+Neste guia, pretendemos compartilhar nossa experiência no uso do \emph{software} \texttt{R} com a comunidade com o objetivo de contribuir com tudo que o programa nos ofereceu ao longo desses anos de uso.
 
-The \textbf{bookdown} package can be installed from CRAN or Github:
-
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
-
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+\ldots{}
 
 \hypertarget{intro}{%
 \chapter{Introdução}\label{intro}}
-
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
-
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -173,8 +171,6 @@ Figures and tables with captions will be placed in \texttt{figure} and \texttt{t
 
 \caption{Here is a nice figure!}\label{fig:nice-fig}
 \end{figure}
-
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -219,8 +215,6 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \bottomrule
 \end{tabular}
 \end{table}
-
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \hypertarget{matemuxe1tica-buxe1sica-no-r}{%
 \chapter{\texorpdfstring{Matemática básica no \texttt{R}}{Matemática básica no R}}\label{matemuxe1tica-buxe1sica-no-r}}
@@ -333,21 +327,139 @@ Aqui temos um exemplo básico da utilização do operador \emph{pipe} \texttt{\t
   \emph{Link} da aula: \href{https://youtu.be/n27-lBxdfFg}{Operador Pipe}.
 \end{itemize}
 
+\hypertarget{como-carregar-dados-para-o-r}{%
+\chapter{\texorpdfstring{Como carregar dados para o \texttt{R}}{Como carregar dados para o R}}\label{como-carregar-dados-para-o-r}}
+
+Neste capítulo mostraremos como importar base de dados ao \texttt{R}. Apresentaremos tanto exemplos com arquivos localizados num repositório local em seu computador, quanto disponíveis na \emph{web}.
+
+\hypertarget{exemplo-1-o-pacote-datasets}{%
+\section{\texorpdfstring{Exemplo 1: o pacote \texttt{datasets}}{Exemplo 1: o pacote datasets}}\label{exemplo-1-o-pacote-datasets}}
+
+\hypertarget{exemplo-2}{%
+\section{Exemplo 2:}\label{exemplo-2}}
+
+\hypertarget{exemplo-3-importauxe7uxe3o-das-bases-de-covid-19}{%
+\section{Exemplo 3: importação das bases de covid-19}\label{exemplo-3-importauxe7uxe3o-das-bases-de-covid-19}}
+
+\hypertarget{jhu}{%
+\subsection{JHU}\label{jhu}}
+
+\hypertarget{br-ms}{%
+\subsection{BR-MS}\label{br-ms}}
+
+\hypertarget{pacote-coronabr}{%
+\subsection{\texorpdfstring{Pacote \texttt{coronabr}}{Pacote coronabr}}\label{pacote-coronabr}}
+
 \hypertarget{visualizauxe7uxe3o-de-dados}{%
 \chapter{Visualização de dados}\label{visualizauxe7uxe3o-de-dados}}
 
 Neste capítulo apresentaremos como utilizar o pacote \texttt{ggplot2} para visualização de dados.
 
 \hypertarget{a-gramuxe1tica-dos-gruxe1ficos}{%
-\chapter{A gramática dos gráficos}\label{a-gramuxe1tica-dos-gruxe1ficos}}
+\section{A gramática dos gráficos}\label{a-gramuxe1tica-dos-gruxe1ficos}}
 
-Some \emph{significant} applications are demonstrated in this chapter.
+Antes de abordarmos o pacote \texttt{ggplot2}, vamos conversar um pouco sobre a lógica na qual ele foi concebido.
 
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
+Mas, o que é uma gramática?
 
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
+No geral, consiste num conjunto de regras. Sob a ótica da linguística, consiste num sistema formal de regras para gerar definições válidas numa língua.
+
+\hypertarget{distribuiuxe7uxf5es-de-probabilidade}{%
+\chapter{Distribuições de Probabilidade}\label{distribuiuxe7uxf5es-de-probabilidade}}
+
+\hypertarget{modelo-uniforme-discreto}{%
+\section{Modelo Uniforme Discreto}\label{modelo-uniforme-discreto}}
+
+\hypertarget{modelo-de-bernoulli}{%
+\section{Modelo de Bernoulli}\label{modelo-de-bernoulli}}
+
+\hypertarget{modelo-binomial}{%
+\section{Modelo Binomial}\label{modelo-binomial}}
+
+\hypertarget{modelo-de-poisson}{%
+\section{Modelo de Poisson}\label{modelo-de-poisson}}
+
+\hypertarget{modelo-geomuxe9trico}{%
+\section{Modelo Geométrico}\label{modelo-geomuxe9trico}}
+
+\hypertarget{modelo-hipergeomuxe9trico}{%
+\section{Modelo Hipergeométrico}\label{modelo-hipergeomuxe9trico}}
+
+\hypertarget{modelo-uniforme-contuxednuo}{%
+\section{Modelo Uniforme Contínuo}\label{modelo-uniforme-contuxednuo}}
+
+\hypertarget{modelo-exponencial}{%
+\section{Modelo Exponencial}\label{modelo-exponencial}}
+
+\hypertarget{modelo-normal}{%
+\section{Modelo Normal}\label{modelo-normal}}
+
+\hypertarget{modelo-gamma}{%
+\section{Modelo Gamma}\label{modelo-gamma}}
+
+\hypertarget{modelo-beta}{%
+\section{Modelo Beta}\label{modelo-beta}}
+
+\hypertarget{modelo-qui-quadrado}{%
+\section{Modelo Qui-quadrado}\label{modelo-qui-quadrado}}
+
+\hypertarget{modelo-t-student}{%
+\section{\texorpdfstring{Modelo \emph{t-Student}}{Modelo t-Student}}\label{modelo-t-student}}
+
+\hypertarget{modelo-f-snedecor}{%
+\section{\texorpdfstring{Modelo \emph{F-Snedecor}}{Modelo F-Snedecor}}\label{modelo-f-snedecor}}
+
+\hypertarget{controle-de-fluxo}{%
+\chapter{Controle de fluxo}\label{controle-de-fluxo}}
+
+\hypertarget{ifcond-expr}{%
+\section{if(cond) expr}\label{ifcond-expr}}
+
+\hypertarget{ifcond-cons.expr-else-alt.expr}{%
+\section{if(cond) cons.expr else alt.expr}\label{ifcond-cons.expr-else-alt.expr}}
+
+\hypertarget{forvar-in-seq-expr}{%
+\section{for(var in seq) expr}\label{forvar-in-seq-expr}}
+
+\hypertarget{whilecond-expr}{%
+\section{while(cond) expr}\label{whilecond-expr}}
+
+\hypertarget{repeat-expr}{%
+\section{repeat expr}\label{repeat-expr}}
+
+\hypertarget{break}{%
+\section{break}\label{break}}
+
+\hypertarget{next}{%
+\section{next}\label{next}}
+
+\hypertarget{r-rstudio-git-github}{%
+\chapter{\texorpdfstring{\(R + RStudio + Git + GitHub\)}{R + RStudio + Git + GitHub}}\label{r-rstudio-git-github}}
+
+Neste capítulo vamos aprender como integrar o \texttt{R} e o \texttt{RStudio} ao \texttt{GitHub} utilizando o sistema de versionamento \texttt{Git}.
+
+\hypertarget{como-fazer-com-r}{%
+\chapter{\texorpdfstring{Como fazer 📚 com \texttt{R}}{Como fazer 📚 com R}}\label{como-fazer-com-r}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{emo}\SpecialCharTok{::}\FunctionTok{ji}\NormalTok{(}\StringTok{\textquotesingle{}poop\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 💩
+\end{verbatim}
+
+\hypertarget{como-fazer-blogs-com-r}{%
+\chapter{\texorpdfstring{Como fazer \emph{blogs} com \texttt{R}}{Como fazer blogs com R}}\label{como-fazer-blogs-com-r}}
+
+Aqui usaremos o pacote \texttt{blogdown} na criação e o \texttt{GitHub} para hospedagem.
+
+\hypertarget{apresentauxe7uxf5es-com-r}{%
+\chapter{\texorpdfstring{Apresentações com \texttt{R}}{Apresentações com R}}\label{apresentauxe7uxf5es-com-r}}
+
+Com \texttt{R} podemos criar apresentações de diversas maneiras. Inclusive com o \texttt{RStudio} aumentamos mais ainda esse leque de possibilidades. Aqui mostraremos como fazê-las utilizando os pacotes \texttt{rmarkdown} e \texttt{xaringan}.
 
 \hypertarget{considerauxe7uxf5es-finais}{%
 \chapter{Considerações Finais}\label{considerauxe7uxf5es-finais}}
@@ -356,6 +468,20 @@ We have finished a nice book.
 
 \renewcommand{\bibname}{Referências}
 \addcontentsline{toc}{chapter}{Referências}
+
+\hypertarget{appendix-apuxeandice}{%
+\appendix}
+
+
+\hypertarget{como-ter-mensagem-personalizada-ao-iniciar-o-r}{%
+\chapter{\texorpdfstring{Como ter mensagem personalizada ao iniciar o \texttt{R}}{Como ter mensagem personalizada ao iniciar o R}}\label{como-ter-mensagem-personalizada-ao-iniciar-o-r}}
+
+Aqui mostraremos como acessar e editar o arquivo \texttt{.Rprofile} para termos, por exemplo, uma mensagem personalizada ao iniciar uma sessão no \texttt{R}.
+
+\href{https://stackoverflow.com/questions/46819684/how-to-access-and-edit-rprofile}{Link: clique aqui 🔗}
+
+\hypertarget{section}{%
+\chapter{}\label{section}}
 
   \bibliography{book.bib,packages.bib}
 

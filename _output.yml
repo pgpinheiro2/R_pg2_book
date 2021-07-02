@@ -9,6 +9,8 @@ bookdown::gitbook:
     download: ["pdf", "epub", "mobi "]
     sharing:
       github: yes
+      whatsapp: yes
+      telegram: yes
       all: ['facebook', 'github', 'twitter', 'linkedin', 'whatsapp']
     info: yes
 bookdown::pdf_book:

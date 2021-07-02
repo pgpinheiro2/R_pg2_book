@@ -1,0 +1,6 @@
+# Como fazer `r emo::ji('books')` com `R`
+
+```{r}
+emo::ji('poop')
+```
+

@@ -1,3 +1,0 @@
-# Visualização de dados
-
-Neste capítulo apresentaremos como utilizar o pacote `ggplot2` para visualização de dados.

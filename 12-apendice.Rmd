@@ -1,0 +1,9 @@
+# (APPENDIX) Apêndice {-}
+
+# Como ter mensagem personalizada ao iniciar o `R`
+
+Aqui mostraremos como acessar e editar o arquivo `.Rprofile` para termos, por exemplo, uma mensagem personalizada ao iniciar uma sessão no `R`.
+
+[Link: clique aqui `r emo::ji('link')`](https://stackoverflow.com/questions/46819684/how-to-access-and-edit-rprofile)
+
+# 

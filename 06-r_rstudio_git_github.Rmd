@@ -1,0 +1,4 @@
+# $R + RStudio + Git + GitHub$
+
+Neste capítulo vamos aprender como integrar o `R` e o `RStudio` ao `GitHub` utilizando o sistema de versionamento `Git`.
+

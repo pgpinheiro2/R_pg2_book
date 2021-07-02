@@ -1,0 +1,29 @@
+# Distribuições de Probabilidade
+
+## Modelo Uniforme Discreto
+
+## Modelo de Bernoulli
+
+## Modelo Binomial
+
+## Modelo de Poisson
+
+## Modelo Geométrico
+
+## Modelo Hipergeométrico
+
+## Modelo Uniforme Contínuo
+
+## Modelo Exponencial
+
+## Modelo Normal
+
+## Modelo Gamma
+
+## Modelo Beta
+
+## Modelo Qui-quadrado
+
+## Modelo *t-Student*
+
+## Modelo *F-Snedecor*

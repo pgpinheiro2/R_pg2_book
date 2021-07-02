@@ -1,0 +1,12 @@
+# Visualização de dados
+
+Neste capítulo apresentaremos como utilizar o pacote `ggplot2` para visualização de dados.
+
+
+## A gramática dos gráficos
+Antes de abordarmos o pacote `ggplot2`, vamos conversar um pouco sobre a lógica na qual ele foi concebido.
+
+Mas, o que é uma gramática?
+
+No geral, consiste num conjunto de regras. Sob a ótica da linguística, consiste num sistema formal de regras para gerar definições válidas numa língua.
+

@@ -1,0 +1,4 @@
+# Como fazer *blogs* com `R`
+
+Aqui usaremos o pacote `blogdown` na criação e o `GitHub` para hospedagem.
+

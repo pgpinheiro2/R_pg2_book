@@ -1,5 +1,7 @@
-`r if (knitr::is_html_output()) '
+`r if (knitr::is_html_output()) ' 
 # Referências {-}
 '`
+
 \renewcommand{\bibname}{Referências}
 \addcontentsline{toc}{chapter}{Referências}
+

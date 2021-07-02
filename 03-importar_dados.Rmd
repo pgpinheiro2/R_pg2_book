@@ -1,0 +1,12 @@
+# Como carregar dados para o `R`
+
+Neste capítulo mostraremos como importar base de dados ao `R`. Apresentaremos tanto exemplos com arquivos localizados num repositório local em seu computador, quanto disponíveis na *web*.
+
+## Exemplo 1: o pacote `datasets`
+
+## Exemplo 2: 
+
+## Exemplo 3: importação das bases de covid-19
+### JHU
+### BR-MS
+### Pacote `coronabr`
